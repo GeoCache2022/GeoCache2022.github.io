@@ -12,39 +12,38 @@
 </head>
 
 <body>
-  <div class="section_content">
-
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <h1>Question 1</h1>
-          <img src="assets/images/boardstate_1.PNG" class="boardstate">
+          <h1 class="swiper-title">Question 1</h1>
+          <p class="swiper-subtitle">Your current position is: </p>
+          <img class="boardstate-img" src="assets/images/boardstate_1.PNG">
         </div>
         <div class="swiper-slide">
-          <h1>Question 2</h1>
-          <img src="assets/images/boardstate_2.PNG" class="boardstate">
+          <h1 class="swiper-title">Question 2</h1>
+          <p class="swiper-subtitle">Your current position is: </p>
+          <img class="boardstate-img" src="assets/images/boardstate_2.PNG">
         </div>
         <div class="swiper-slide">
-          <h1>Question 3</h1>
-          <img src="assets/images/boardstate_3.PNG" class="boardstate">
+          <h1 class="swiper-title">Question 3</h1>
+          <p class="swiper-subtitle">Your current position is: </p>
+          <img class="boardstate-img" src="assets/images/boardstate_3.PNG">
         </div>
       </div>
       <div style="display: flex; gap: 10px; margin-top: 10px;">
-        <a class="Back" style="flex: 1;">Back</a>
-        <a class="Next" style="flex: 1;">Next</a>
+        <a class="button Back" style="flex: 1;">Back</a>
+        <a class="button Next" style="flex: 1;">Next</a>
       </div>
     </div>
-
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper('.swiper', {
-        navigation: {
-          nextEl: '.Next',
-          prevEl: '.Back',
-        },
-      });
-    </script>
-  </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper', {
+      navigation: {
+        nextEl: '.Next',
+        prevEl: '.Back',
+      },
+    });
+  </script>
 </body>
 
 </html>

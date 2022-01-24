@@ -5,7 +5,7 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  padding: 0 40px;
+  padding: 40px;
 }
 
 html, body {
@@ -23,33 +23,34 @@ html, body {
   box-sizing: border-box;
 }
 
-.section_content {
+.container {
+  text-align: center;
+  margin: auto;
+  /*verwijder dit voor: button op index pagina even groot maken als content*/
   display: flex;
   flex-direction: column;
-  margin: auto;
-  text-align: center;
 }
 
-.section_content h1 {
+h1 {
   color: #FFFFFF;
   font-size: 44px;
   font-weight: 700;
   margin: 0 0 40px 0;
 }
 
-.section_content h3 {
+h3 {
   color: #FFFFFF;
   font-size: 25px;
   font-weight: 500;
   margin: 0 0 5px 0;
 }
-.section_content p {
+p {
   color: #FFFFFF;
   opacity: 0.75;
   margin: 8px 0 0 0;
 }
 
-.section_content a {
+.button {
   background-color: #0080FF;
   border-radius: 15px;
   color: #FFFFFF;
@@ -58,8 +59,12 @@ html, body {
   padding: 15px;
 }
 
+
+/*Swiper Styling*/
 .swiper {
-  width: 500px;
+  text-align: center;
+  width: 700px;
+  margin: auto;
 }
 
 .swiper-slide {
@@ -68,6 +73,14 @@ html, body {
   background: #111111;
 }
 
-.swiper-slide .boardstate {
-  width: 100%;
+.swiper-slide .boardstate-img {
+  max-width: 100%;
+}
+
+.swiper .swiper-title {
+  margin: 0;
+}
+
+.swiper .swiper-subtitle {
+  margin: 0 0 20px 0;
 }
