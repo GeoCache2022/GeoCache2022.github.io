@@ -74,7 +74,7 @@ p {
 }
 
 .swiper-slide .boardstate-img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .swiper .swiper-title {
@@ -85,8 +85,9 @@ p {
   margin: 0 0 20px 0;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    padding: 20px;
-  }
+.swiper .swiper-answers {
+  background-color: black;
+  padding: 20px;
+  border-radius: 20px;
+  list-style: none;
 }
