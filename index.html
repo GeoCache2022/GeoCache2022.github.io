@@ -17,17 +17,33 @@
     <p>To open the treasure, you will need to answer a few question first about chess</p>
     <br><br>
     <h3>2. Running the geocache</h3>
-    <p>Find a way to turn the geocache on. When turned on the display will flash and the timer<br>will start</p>
+    <p>Find a way to turn the geocache on. When turned on the display will flash and the timer will start.<br> When you turned the geocache on, press the button below.</p>
     <br><br>
-    <h3>3. Start the quiz</h3>
-    <p>Click the button at the bottom of the page to have a peek at the questions.</p>
-    <br><br>
-    <h3>4. Enter the answers</h3>
-    <p>Use the buttons on the geocache to select the correct answers. Correct answers will<br>switch on an LED light</p>
-    <br><br>
-    <br><br>
-    <a class="button" href="startquiz.html">Start the quiz</a>
+    <a class="button" onclick="showContent();" id="buttonShow">I turned it on</a>
+    <div id="content" style="display: none;">
+      <h3>3. Start the quiz</h3>
+      <p>Click the button at the bottom of the page to have a peek at the questions.</p>
+      <br><br>
+      <h3>4. Enter the answers</h3>
+      <p>Use the buttons on the geocache to select the correct answers. Correct answers will<br>switch on an LED light</p>
+      <br><br>
+      <br><br>
+      <a class="button" href="startquiz.html">Start the quiz</a>
+    </div>
   </div>
 </body>
-
 </html>
+<script>
+  function showContent(){
+    var x = document.getElementById("content");
+    var button = document.getElementById("buttonShow");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      button.style.display = "none";
+    } 
+    else {
+      x.style.display = "none";
+      button.style.display = "block";
+    }
+  }
+</script>

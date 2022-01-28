@@ -59,6 +59,11 @@ p {
   padding: 15px;
 }
 
+#buttonShow{
+  align-self: flex-start;
+  margin: 0 auto;
+}
+
 
 /*Swiper Styling*/
 .swiper {
